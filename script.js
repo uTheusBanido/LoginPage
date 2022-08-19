@@ -4,16 +4,6 @@ let apikeys = [
         password: 123456,
         user: 'uTheusBanido'
     },
-    {
-        key: 222,
-        password: 3456,
-        user: 'Owner'
-    },
-    {
-        key: 89234,
-        password: 2342,
-        user: 'Safadasso'
-    },
 ];
 
 
