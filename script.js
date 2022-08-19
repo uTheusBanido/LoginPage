@@ -3,10 +3,17 @@ let apikeys = [
         key: 222,
         password: 123456,
         user: 'uTheusBanido'
+    {
+        key: 2222,
+        password: 3456,
+        user: 'Owner'
+    },
+    {
+        key: 89234,
+        password: 2342,
+        user: 'Safadasso'
     },
 ];
-
-
 
 
 function host() { // function Host index.html
