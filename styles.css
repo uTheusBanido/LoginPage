@@ -1,0 +1,119 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100';
+button {
+    background-color: greenyellow;
+    font-family: Arial;
+    border-radius: 5px;
+    border-color: #7b03a3;
+    position: center;
+    padding: 10px 20px;
+}
+body {
+    background-color: #1C1C1C;
+}
+.login {
+    background-image: url(./images/espaço.jpg);
+    font-family: Arial;
+    font-style: bold;
+    color: rgb(157, 25, 233);
+    font-size: 20px;
+    border: 7px solid #474350;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 1px;
+    background-size: cover;
+    z-index: 1000;
+  width: 400px;
+  height: 350px;
+}
+.centerlogin {
+    width: 400px;
+    position: absolute;
+    background-size: cover;
+    padding: 10px;
+    margin: 10px 1px;
+}
+.topo {
+    padding: 6px;
+    font-family: Arial;
+    font-style: oblique;
+    color: #F4F7F5;
+    border-radius: 6px 6px;
+}
+.logo2 {
+    padding: 1px;
+    margin: 1px 1px;
+}
+.user {
+    position: center;
+    border: 3px solid #7b03a3;
+    border-radius: 20px 10px;
+    padding: 10px 10px;
+    background-color: #00000049;
+}
+.password {
+    border-radius: 20px 10px;
+    border: 3px solid #7b03a3;
+    padding: 10px 10px;
+    position: center;
+    background-color: #00000049;
+    
+}
+.key {
+    border-radius: 20px 10px;
+    border: 3px solid #7b03a3;
+    padding: 10px 10px;
+    background-color: #00000049;
+}
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 60px;
+}
+.navbar .menu .nav-item{
+    position:relative
+}
+.navbar .menu .nav-item:hover:before,.navbar .menu .nav-item:hover:after{
+    width:100%;
+}
+.navbar .menu .nav-item:after{
+    content:' ';
+    width:0;
+    height:1px;
+    left:0;
+    right:0;
+    bottom:-4px;
+    margin:auto;
+    position:absolute;
+    background:var(--blue-text-secondary);
+    transition:all .4s ease-in-out
+}
+.btn{
+    color:#fff!important;
+    z-index:1;
+    position:relative;
+    letter-spacing:1px;
+    text-align:center;
+    padding:8px;
+    border-radius:2px;
+    background-color:#7b03a3;
+    transition:all .4s ease-in-out
+}
+.h3aviso{
+    color: #fff
+}
+.h3theus{
+    color: #fff
+}
+.avisoimportante{
+    border: 2px solid #91059e49;
+    padding: 10px;
+    margin: 10px 1px;
+    font-size: Arial;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 600px;
+    color: rgb(0, 0, 0);
+    background-color: #7b03a3;
+    border-radius: 20px;
+    position: Sticky;
+}
