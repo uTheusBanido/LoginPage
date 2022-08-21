@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js" integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/v4-shims.min.css" integrity="sha512-juNw36A2S+8vPLyCQCBmfxRf1+gFYy07BozcavXe9adyITkvA9LuVCbkZI9kp59tjUrn/S7zeDFN1Brz1JqJnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/v4-shims.min.js" integrity="sha512-pd9YFLsGdZIRG1ChLLdpxgGT+xR7rVjsHqm6RP0toUadPB4XZZ7LlqzX3IhnpMd2Cb8b2s8yVFwY21epgr84qw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Treino</title>
 </head>
 
@@ -32,21 +36,24 @@
     <form onsubmit="host()">
         <div class="centerlogin">
     <div> 
-            <label for="user"></label> <input class="user" name="user" id="user" type="text" placeholder="Enter your Username"> <img src="./images/user.png" alt="">
+            <label for="user"></label> <input class="user" name="user" style="color: white;" id="user" type="text" placeholder="Enter your Username"> <img src="./images/user.png" alt="">
      </div>
     <div>
-            <label for="password"></label> <input class="password" name="password" id="password" type="text" placeholder="Password"> <img src="./images/lock.png" alt="">
+            <label for="password"></label> <input class="password" name="password" style="color: white;" id="password" type="text" placeholder="Password"> <img src="./images/lock.png" alt="">
      </div>
     <div>
-        <label for="key"></label> <input class="key" name="key" id="key" type="text" placeholder="Key" > <img src="./images/key.png" alt=""> <br>
+        <label for="key"></label> <input class="key" name="key" id="key" style="color: white;" type="text" placeholder="Key" > <img src="./images/key.png" alt=""> <br>
      </div>
         <br>
-            <button type="submit">SIGN IN</button>
+            <button type="submit">SIGN IN </button>
         </div>
             </form>
         </div>
     </div>
     </center>
+    <center>
+    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+<span class="sr-only">Loading...</span></center>
 											
 
     <!--EM BAIXO DO LOGIN-->
