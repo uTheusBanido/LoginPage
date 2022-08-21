@@ -70,10 +70,14 @@ function host() { // function Host index.html
     } 
     return Swal.fire({
   title: 'Success!',
-  text: 'Logado com Sucesso!',
+  text: 'Logado com Sucesso, Redirecionando...',
   icon: 'success',
-  timer: 2000
-})
+  timer: 2000,
+}).then(function() {
+  window.location = "./Inicio.php";
+});
+    
+
     // return console.log(`Olá ${accounts_list.user}, Logado com sucesso! KEY: ${accounts_list.key}`);
 
 
