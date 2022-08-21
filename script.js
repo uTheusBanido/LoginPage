@@ -23,22 +23,58 @@ function host() { // function Host index.html
     let key = document.getElementById("key").value // chave
 
     if (!user || !password || !key) {
-        return console.log("Preencha Todos os Campos!");
+    return Swal.fire({
+  title: 'Error',
+  text: 'Preencha Todos os Campos!',
+  icon: 'error',
+  timer: 2000
+})
+        // return console.log("Preencha Todos os Campos!");
     }
     const accounts_list = accounts.find(account => account.user == user);
     if (!accounts_list){
-        return console.log("usuario inexistente.")
+    return Swal.fire({
+  title: 'Error',
+  text: 'Usuario inexistente.',
+  icon: 'error',
+  timer: 2000
+})
+        // return console.log("usuario inexistente.")
     }
     if (accounts_list.user != user) {
-        return console.log("Usuario Errado!")
+    return Swal.fire({
+  title: 'Error',
+  text: 'Usuario Errado!.',
+  icon: 'error',
+  timer: 2000
+})
+        // return console.log("Usuario Errado!")
     } 
     if (accounts_list.password != password){
-        return console.log("Senha Errada!")
+    return Swal.fire({
+  title: 'Error',
+  text: 'Senha Incorreta!',
+  icon: 'error',
+  timer: 2000
+})
+        // return console.log("Senha Errada!")
     }
     if (accounts_list.key != key) {
-        return console.log("Key Invalida!")
+    return Swal.fire({
+  title: 'Error',
+  text: 'Key Invalida!',
+  icon: 'error',
+  timer: 2000
+})
+        // return console.log("Key Invalida!")
     } 
-    return console.log(`Olá ${accounts_list.user}, Logado com sucesso! KEY: ${accounts_list.key}`);
+    return Swal.fire({
+  title: 'Success!',
+  text: 'Logado com Sucesso!',
+  icon: 'success',
+  timer: 2000
+})
+    // return console.log(`Olá ${accounts_list.user}, Logado com sucesso! KEY: ${accounts_list.key}`);
 
 
         }
